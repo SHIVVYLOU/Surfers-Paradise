@@ -1,9 +1,9 @@
 from djang import forms
-from .models import Post
+from .models import Product
 
 
-class BlogPostForm(forms.ModelForm):
+class ProductsForm(forms.ModelForm):
 
     class Meta:
-        model = Post
+        model = Product
         fields = ('title', 'content', 'image', 'tag', 'published_date')
